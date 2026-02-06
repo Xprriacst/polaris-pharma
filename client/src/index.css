@@ -43,74 +43,97 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  /* Polaris IA - Minimalisme Technologique Nordique */
+  /* Primary: Teal/Turquoise pour l'IA et l'innovation */
+  --primary: #00A896;
+  --primary-foreground: #FAFBFC;
+  --sidebar-primary: #00A896;
+  --sidebar-primary-foreground: #FAFBFC;
+  
+  /* Accent: Teal pour les CTAs */
+  --chart-1: #00A896;
+  --chart-2: #0088A8;
+  --chart-3: #1A6B7B;
+  --chart-4: #2D4A52;
+  --chart-5: #1A2332;
+  
+  --radius: 0.5rem;
+  
+  /* Background: Blanc cassé pour clarté et confiance */
+  --background: #FAFBFC;
+  --foreground: #1A2332;
+  
+  /* Card: Blanc pur avec texte bleu-gris */
+  --card: #FFFFFF;
+  --card-foreground: #1A2332;
+  
+  /* Popover */
+  --popover: #FFFFFF;
+  --popover-foreground: #1A2332;
+  
+  /* Secondary: Gris clair */
+  --secondary: #E8ECEF;
+  --secondary-foreground: #1A2332;
+  
+  /* Muted: Gris moyen */
+  --muted: #D1D5DB;
+  --muted-foreground: #6B7280;
+  
+  /* Accent: Teal */
+  --accent: #00A896;
+  --accent-foreground: #FAFBFC;
+  
+  /* Destructive */
+  --destructive: #DC2626;
+  --destructive-foreground: #FAFBFC;
+  
+  /* Border et Input */
+  --border: #E5E7EB;
+  --input: #F3F4F6;
+  --ring: #00A896;
+  
+  /* Sidebar */
+  --sidebar: #FAFBFC;
+  --sidebar-foreground: #1A2332;
+  --sidebar-accent: #E8ECEF;
+  --sidebar-accent-foreground: #1A2332;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #00A896;
 }
 
 .dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --primary: #00A896;
+  --primary-foreground: #0F1419;
+  --sidebar-primary: #00A896;
+  --sidebar-primary-foreground: #0F1419;
+  --background: #0F1419;
+  --foreground: #E5E7EB;
+  --card: #1A1F2E;
+  --card-foreground: #E5E7EB;
+  --popover: #1A1F2E;
+  --popover-foreground: #E5E7EB;
+  --secondary: #2D3748;
+  --secondary-foreground: #CBD5E0;
+  --muted: #4A5568;
+  --muted-foreground: #A0AEC0;
+  --accent: #00A896;
+  --accent-foreground: #0F1419;
+  --destructive: #F87171;
+  --destructive-foreground: #0F1419;
+  --border: #2D3748;
+  --input: #1A1F2E;
+  --ring: #00A896;
+  --chart-1: #00A896;
+  --chart-2: #0088A8;
+  --chart-3: #1A6B7B;
+  --chart-4: #2D4A52;
+  --chart-5: #E5E7EB;
+  --sidebar: #1A1F2E;
+  --sidebar-foreground: #E5E7EB;
+  --sidebar-accent: #2D3748;
+  --sidebar-accent-foreground: #E5E7EB;
+  --sidebar-border: #2D3748;
+  --sidebar-ring: #00A896;
 }
 
 @layer base {
@@ -119,6 +142,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -130,6 +154,32 @@
   input[type="checkbox"]:not(:disabled),
   input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
+  }
+  
+  /* Typography: Polaris IA Design System */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  h1 {
+    @apply text-5xl md:text-6xl font-bold tracking-tight;
+  }
+  
+  h2 {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+  
+  p {
+    @apply text-base leading-relaxed;
   }
 }
 
@@ -173,5 +223,23 @@
       padding-right: 2rem;
       max-width: 1280px; /* Standard content width */
     }
+  }
+  
+  /* Polaris IA Custom Components */
+  .section-divider {
+    @apply border-t border-border;
+  }
+  
+  .stat-number {
+    font-family: 'Poppins', sans-serif;
+    @apply text-4xl md:text-5xl font-bold text-primary;
+  }
+  
+  .cta-button {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:opacity-90 hover:shadow-lg;
+  }
+  
+  .secondary-button {
+    @apply border border-border text-foreground px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-secondary;
   }
 }
