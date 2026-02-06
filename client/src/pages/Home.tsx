@@ -213,18 +213,26 @@ export default function Home() {
       <section id="solutions" className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-foreground mb-4">7 solutions d'automatisation</h2>
-            <p className="text-lg text-muted-foreground">
-              Chaque solution est adaptée aux contraintes et besoins spécifiques de votre pharmacie.
+            <h2 className="text-foreground mb-4">Des solutions 100% sur mesure</h2>
+            <p className="text-lg text-muted-foreground mb-4">
+              Voici 7 exemples d'automatisations que nous avons mises en place. Votre solution sera entièrement personnalisée selon vos besoins spécifiques.
             </p>
+            <div className="inline-block bg-primary/10 border border-primary/20 rounded-lg px-4 py-2 mb-6">
+              <p className="text-sm font-semibold text-primary">
+                💡 Chaque pharmacie est unique. Nous adaptons nos solutions à vos contraintes et vos outils.
+              </p>
+            </div>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {solutions.map((solution) => (
               <div
                 key={solution.id}
-                className="border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-300 cursor-pointer bg-card"
+                className="border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-300 cursor-pointer bg-card relative"
                 onClick={() => setExpandedSolution(expandedSolution === solution.id ? null : solution.id)}
               >
+                <div className="absolute top-3 right-3 bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded">
+                  Exemple
+                </div>
                 <div className="flex items-start gap-4">
                   <span className="text-3xl">{solution.icon}</span>
                   <div className="flex-1">
@@ -233,7 +241,7 @@ export default function Home() {
                       <p className="text-muted-foreground mb-3">{solution.description}</p>
                     )}
                     <div className="text-sm font-semibold text-primary">
-                      Gain: {solution.timeGained}
+                      Gain estimé: {solution.timeGained}
                     </div>
                   </div>
                 </div>
@@ -268,18 +276,18 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-foreground mb-4">Notre méthode en 4 étapes</h2>
+            <h2 className="text-foreground mb-4">Notre approche : 4 étapes pour votre transformation</h2>
             <p className="text-lg text-muted-foreground">
-              Un accompagnement complet pour transformer votre pharmacie.
+              Un accompagnement complet et personnalisé pour transformer votre pharmacie selon vos besoins spécifiques.
             </p>
           </div>
           <div className="grid md:grid-cols-4 gap-6">
             {process.map((step, idx) => (
               <div key={idx} className="relative">
-                <div className="bg-card border border-border rounded-lg p-6">
+                <div className="bg-background border border-border rounded-lg p-6">
                   <div className="w-12 h-12 bg-primary text-primary-foreground rounded-lg flex items-center justify-center font-bold text-lg mb-4">
                     {step.number}
                   </div>
@@ -303,8 +311,11 @@ export default function Home() {
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-foreground mb-6">Prêt à transformer votre pharmacie ?</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Commencez par un audit gratuit de 30 minutes. Nous analyserons vos processus et vous proposerons les gains potentiels.
+            <p className="text-lg text-muted-foreground mb-4">
+              Commencez par un audit gratuit de 30 minutes. Nous analyserons vos processus actuels et vous proposerons une solution entièrement personnalisée.
+            </p>
+            <p className="text-sm text-muted-foreground mb-8 italic">
+              Les solutions présentées ci-dessus sont des exemples. Votre solution sera adaptée à votre logiciel, vos besoins spécifiques et vos contraintes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="cta-button" size="lg">
