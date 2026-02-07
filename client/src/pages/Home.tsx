@@ -138,10 +138,10 @@ export default function Home() {
                 </span>
               </div>
               <h1 className="text-foreground">
-                Automatisez votre pharmacie, humanisez votre service
+                Redonnez du temps<br />au cœur de votre métier.
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Polaris IA libère vos pharmaciens des tâches administratives répétitives. Récupérez jusqu'à 20 heures par semaine pour vous concentrer sur vos patients.
+                Polaris IA automatise vos tâches administratives, la gestion des stocks et les flux financiers. Libérez-vous de la surcharge mentale pour vous consacrer à vos patients.
               </p>
               <div className="flex gap-4 pt-4">
                 <Button className="cta-button" size="lg">
@@ -167,30 +167,30 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-foreground mb-4">Les défis quotidiens des pharmaciens</h2>
+            <h2 className="text-foreground mb-4">Les défis du quotidien</h2>
             <p className="text-lg text-muted-foreground">
-              Entre 30 et 40% du temps passé sur des tâches administratives qui ne créent pas de valeur pour vos patients.
+              Nous comprenons la réalité du pharmacien d'aujourd'hui, tiraillé entre soins et gestion.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              "Tâches administratives et comptables",
-              "Gestion des factures en attente",
-              "Gestion des ressources humaines",
-              "Négociations commerciales",
-              "Support administratif patients/mutuelles",
-              "Aide numérique aux patients",
-              "Gestion des appels téléphoniques",
-              "Prise de rendez-vous",
-              "Gestion des ruptures d'approvisionnement",
-            ].map((challenge, idx) => (
-              <div key={idx} className="flex gap-3 items-start">
-                <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
-                  <div className="w-2 h-2 bg-primary rounded-full" />
-                </div>
-                <p className="text-foreground">{challenge}</p>
-              </div>
-            ))}
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-card border border-border rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-foreground mb-3">Surcharge Administrative</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Gestion des factures en attente, comptabilité complexe et lourdeurs administratives qui s'accumulent.
+              </p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-foreground mb-3">Complexité d'Approvisionnement</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Gestion des ruptures, multiplicité des circuits, offres concurrentielles et nouveaux fournisseurs.
+              </p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-foreground mb-3">Relation Patient & RH</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Support mutuelles, incivilités, aide numérique, gestion des appels et management des équipes.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -296,9 +296,9 @@ export default function Home() {
       >
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-foreground mb-6">Prêt à transformer votre pharmacie ?</h2>
+            <h2 className="text-foreground mb-6">Prêt à moderniser votre officine ?</h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Commencez par un audit gratuit de 30 minutes. Nous analyserons vos processus actuels et vous proposerons une solution entièrement personnalisée.
+              Discutons de vos problématiques spécifiques et voyons comment l'automatisation peut vous faire gagner des heures précieuses chaque semaine.
             </p>
             <p className="text-sm text-muted-foreground mb-8 italic">
               Les solutions présentées ci-dessus sont des exemples. Votre solution sera adaptée à votre logiciel, vos besoins spécifiques et vos contraintes.
