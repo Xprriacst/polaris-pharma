@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Clock, TrendingUp, Users, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle, Clock, TrendingUp, Users } from "lucide-react";
 import { useState } from "react";
 
 /**
@@ -9,7 +9,7 @@ import { useState } from "react";
  * Sections:
  * 1. Hero: Présentation de Polaris IA avec image de pharmacie
  * 2. Problem: Pain points des pharmaciens
- * 3. Solutions: 7 solutions principales
+ * 3. Solutions: 5 solutions principales
  * 4. Results: Chiffres clés et ROI
  * 5. Process: 4 étapes de la méthode
  * 6. CTA: Audit gratuit
@@ -21,52 +21,38 @@ export default function Home() {
   const solutions = [
     {
       id: 1,
-      title: "Gestion des ordonnances par email",
-      description: "Automatisation complète de la surveillance des emails, extraction des pièces jointes et classement par patient.",
-      timeGained: "30-45 min/jour",
-      icon: "📧",
+      title: "Vérification automatique des factures",
+      description: "Extraction des montants, détection des anomalies et des doublons. Récupération automatique des écarts et facilitation des remboursements.",
+      timeGained: "3-4h/semaine",
+      icon: "📄",
     },
     {
       id: 2,
-      title: "Formation digitalisée",
-      description: "Bibliothèque de tutoriels vidéo avec quiz et checklist pour une autonomie rapide de vos collaborateurs.",
-      timeGained: "15-20h par recrue",
-      icon: "🎓",
-    },
-    {
-      id: 3,
-      title: "Gestion proactive des périmés",
-      description: "Extraction automatique des dates, alertes hebdomadaires et suggestions d'actions.",
-      timeGained: "1000€-5000€/an",
-      icon: "⏰",
-    },
-    {
-      id: 4,
-      title: "Traitement des rejets",
-      description: "Catégorisation automatique des rejets, relances pré-remplies et tableau de bord.",
+      title: "Traitement automatisé des rejets",
+      description: "Catégorisation automatique des rejets, génération de relances pré-remplies et tableau de bord de suivi.",
       timeGained: "4-5h/mois",
       icon: "🔄",
     },
     {
+      id: 3,
+      title: "Vérification intelligente des ordonnances",
+      description: "Contrôle automatisé des ordonnances pour minimiser les risques d'erreurs et protéger votre responsabilité.",
+      timeGained: "Sécurité renforcée",
+      icon: "✅",
+    },
+    {
+      id: 4,
+      title: "Formation digitalisée de vos équipes",
+      description: "Bibliothèque de tutoriels vidéo, quiz et checklist pour une autonomie rapide de vos collaborateurs.",
+      timeGained: "15-20h par recrue",
+      icon: "🎓",
+    },
+    {
       id: 5,
-      title: "Optimisation des commandes",
-      description: "IA analysant l'historique de ventes pour proposer les bonnes quantités à commander.",
+      title: "Aide à la décision pour les produits para (TVA 20%)",
+      description: "IA analysant les ventes et les marges pour optimiser votre mix produit et vos achats de parapharmacie.",
       timeGained: "2-3h/semaine",
       icon: "📊",
-    },
-    {
-      id: 6,
-      title: "Recrutement et fidélisation",
-      description: "Scraping automatique de profils, messages personnalisés et enquêtes de satisfaction.",
-      timeGained: "Gains stratégiques",
-      icon: "👥",
-    },
-    {
-      id: 7,
-      title: "Réponses aux questions récurrentes",
-      description: "Assistant IA connecté au stock pour répondre aux questions de disponibilité.",
-      timeGained: "1h/jour",
-      icon: "🤖",
     },
   ];
 
@@ -215,7 +201,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-foreground mb-4">Des solutions 100% sur mesure</h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Voici 7 exemples d'automatisations que nous avons mises en place. Votre solution sera entièrement personnalisée selon vos besoins spécifiques.
+              Voici 5 exemples d'automatisations que nous avons mises en place. Votre solution sera entièrement personnalisée selon vos besoins spécifiques.
             </p>
             <div className="inline-block bg-primary/10 border border-primary/20 rounded-lg px-4 py-2 mb-6">
               <p className="text-sm font-semibold text-primary">
