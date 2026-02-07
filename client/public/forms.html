@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Netlify Forms</title>
+</head>
+<body>
+  <!-- Ce fichier permet à Netlify de détecter le formulaire lors du build -->
+  <form name="audit-contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="nom" />
+    <input type="text" name="prenom" />
+    <input type="email" name="email" />
+    <input type="tel" name="telephone" />
+    <input type="text" name="pharmacie" />
+    <input type="text" name="logiciel" />
+    <textarea name="message"></textarea>
+  </form>
+</body>
+</html>

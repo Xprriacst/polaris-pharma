@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Clock, TrendingUp, Users } from "lucide-react";
 import { useState } from "react";
+import ContactForm from "@/components/ContactForm";
 
 /**
  * Polaris IA - Home Page
@@ -49,8 +50,8 @@ export default function Home() {
     },
     {
       id: 5,
-      title: "Aide à la décision pour les produits para (TVA 20%)",
-      description: "IA analysant les ventes et les marges pour optimiser votre mix produit et vos achats de parapharmacie.",
+      title: "Optimisation intelligente de votre parapharmacie",
+      description: "IA analysant les ventes et les marges pour optimiser votre mix produit et vos achats de parapharmacie (TVA 20%).",
       timeGained: "2-3h/semaine",
       icon: "📊",
     },
@@ -58,23 +59,18 @@ export default function Home() {
 
   const results = [
     {
-      stat: "30-40%",
-      label: "du temps passé sur des tâches administratives",
-      icon: Clock,
-    },
-    {
-      stat: "20h",
+      stat: "jusqu'à 20h",
       label: "récupérées par semaine",
       icon: TrendingUp,
     },
     {
-      stat: "-80%",
+      stat: "jusqu'à -80%",
       label: "d'erreurs sur la gestion des stocks",
       icon: CheckCircle,
     },
     {
-      stat: "+35%",
-      label: "de satisfaction",
+      stat: "jusqu'à -50%",
+      label: "de réduction du temps d'attente patient",
       icon: Users,
     },
   ];
@@ -201,7 +197,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-foreground mb-4">Des solutions 100% sur mesure</h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Voici 5 exemples d'automatisations que nous avons mises en place. Votre solution sera entièrement personnalisée selon vos besoins spécifiques.
+              Voici 5 exemples d'automatisations que nous proposons. Votre solution sera entièrement personnalisée selon vos besoins spécifiques.
             </p>
             <div className="inline-block bg-primary/10 border border-primary/20 rounded-lg px-4 py-2 mb-6">
               <p className="text-sm font-semibold text-primary">
@@ -246,7 +242,7 @@ export default function Home() {
               Une méthode éprouvée avec des gains quantifiables pour votre officine.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {results.map((result, idx) => {
               const Icon = result.icon;
               return (
@@ -295,21 +291,24 @@ export default function Home() {
         className="py-16 md:py-24 bg-gradient-to-r from-primary/10 to-primary/5 border-t border-b border-border"
       >
         <div className="container">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-foreground mb-6">Prêt à moderniser votre officine ?</h2>
-            <p className="text-lg text-muted-foreground mb-4">
-              Discutons de vos problématiques spécifiques et voyons comment l'automatisation peut vous faire gagner des heures précieuses chaque semaine.
-            </p>
-            <p className="text-sm text-muted-foreground mb-8 italic">
-              Les solutions présentées ci-dessus sont des exemples. Votre solution sera adaptée à votre logiciel, vos besoins spécifiques et vos contraintes.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="cta-button" size="lg">
-                Demander un audit gratuit
-              </Button>
-              <a href="mailto:contact@polaris-ia.fr" className="secondary-button inline-flex items-center justify-center">
-                contact@polaris-ia.fr
-              </a>
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-foreground mb-6">Prêt à moderniser votre officine ?</h2>
+              <p className="text-lg text-muted-foreground mb-4">
+                Discutons de vos problématiques spécifiques et voyons comment l'automatisation peut vous faire gagner des heures précieuses chaque semaine.
+              </p>
+              <p className="text-sm text-muted-foreground mb-4 italic">
+                Les solutions présentées ci-dessus sont des exemples. Votre solution sera adaptée à votre logiciel, vos besoins spécifiques et vos contraintes.
+              </p>
+            </div>
+            <ContactForm />
+            <div className="text-center mt-6">
+              <p className="text-sm text-muted-foreground">
+                Ou contactez-nous directement par email :{" "}
+                <a href="mailto:contact@polaris-ia.fr" className="text-primary hover:underline font-semibold">
+                  contact@polaris-ia.fr
+                </a>
+              </p>
             </div>
           </div>
         </div>
